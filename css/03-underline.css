@@ -1,0 +1,47 @@
+/* Animate link underline */
+
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  border-bottom: 2px solid red;
+  padding-bottom: 2px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 10px;
+}
+.menu-item {
+  position: relative;
+}
+.menu-link::after {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+
+  width: 100%;
+
+  content: "";
+  height: 4px;
+  background-color: blue;
+
+  transform: scaleX(0);
+
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item:hover .menu-link::after {
+  transform: scaleX(1);
+}
+
+.menu-link {
+
+  position: relative;
+
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: currentColor;
+}

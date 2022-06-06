@@ -1,0 +1,57 @@
+/* Animate pseudoelements offset back and forth */
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+  background-color: #008080;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+
+  overflow: hidden;  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn::before,
+.btn::after  {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+  transform: translateY(0);
+  background-image: url('../images/bird.svg');
+  background-size: contain;
+  background-position: center;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.btn::after {
+  position: absolute;
+  left: 30px;
+  top: 12px;
+  margin-right: 0;
+  transform: translateY(calc(100% + 12px));
+
+  background-image: url('../images/cat.svg');
+}
+
+.btn:hover::before {
+  transform: translateY(calc(-100% - 12px));
+}
+
+.btn:hover::after {
+  transform: translateY(0);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d87093;
+}
