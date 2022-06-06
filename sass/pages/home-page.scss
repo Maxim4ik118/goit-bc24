@@ -1,0 +1,26 @@
+.main {
+
+}
+.gallery {
+    background-color: #6e6e6e;
+}
+.our-works {
+
+}
+
+.our-works__item {
+    
+}
+
+.our-developers {
+    background-color: #fefefe;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-developers__item {
+    margin-left: 30px;
+    &:last-child {
+        margin-left: 0;
+    }
+}

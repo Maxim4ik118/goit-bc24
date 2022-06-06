@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,QAAQ,AAAC,CACL,gBAAgB,CAAE,OAAO,CAC5B,AASD,AAAA,eAAe,AAAC,CACZ,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,IAAI,CAClB,AAED,AAAA,qBAAqB,AAAC,CAClB,WAAW,CAAE,IAAI,CAIpB,AALD,AAEI,qBAFiB,AAEhB,WAAW,AAAC,CACT,WAAW,CAAE,CAAC,CACjB",
+    "sources": [
+        "../sass/pages/home-page.scss"
+    ],
+    "names": [],
+    "file": "home-page.min.css"
+}

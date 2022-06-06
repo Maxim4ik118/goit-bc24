@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Препроцессор SASS</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/home-page.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="logo header__logo">
+        <span class="header__text"> Logo1 </span>
+      </a>
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">Link 1</li>
+          <li class="site-nav__item">Link 2</li>
+          <li class="site-nav__item">Link 3</li>
+          <li class="site-nav__item">Link 4</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="gallery">
+        <div class="container">
+          <ul class="our-works">
+            <li class="our-works__item">
+              <div class="product">
+                <p class="product__title">Work1</p>
+                <p class="product__meta">Meta</p>
+              </div>
+            </li>
+            <li class="our-works__item">
+              <div class="product">
+                <p class="product__title">Work2</p>
+                <p class="product__meta">Meta</p>
+              </div>
+            </li>
+            <li class="our-works__item">
+              <div class="product">
+                <p class="product__title">Work3</p>
+                <p class="product__meta">Meta</p>
+              </div>
+            </li>
+            <li class="our-works__item">
+              <div class="product">
+                <p class="product__title">Work4</p>
+                <p class="product__meta">Meta</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="our-developers">
+        <div class="developer-card">
+          <img src="" alt="" class="developer-card__image">
+         <h3 class="developer-card__title"></h3>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="" class="logo footer__logo">
+        <span class="footer__text"> Logo2 </span>
+      </a>
+    </footer>
+
+    <h1>Алгоритм підключення і використання препроцессорів</h1>
+    <ul>
+      <li>1. Перйменувати класи згідно БЕМ нотації</li>
+      <li>2. Створити файлову структуру</li>
+      <li>3. Додади розширення Live Sass Compiler</li>
+      <li>4. Додати папку .vscode та в неї помістити файл settings.json</li>
+      <li>5. Переносите шрифти, нормалізатор та змінні в відповідні папки</li>
+      <li>6. Виділяєте окремі блоки та переносите їх до компонентів</li>
+      <li>7. Окремі сторінки винести до окремих файлів</li>
+    </ul>
+  </body>
+</html>
