@@ -1,0 +1,38 @@
+/* Utils */
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/common';
+/* Base */
+@import './base/normalize';
+@import './base/fonts';
+@import './base/reset';
+/* Components */
+@import './components/hero';
+@import './components/header';
+@import './components/best-barber';
+@import './components/service';
+@import './components/master';
+@import './components/our-chioce';
+@import './components/our-masters';
+@import './components/gallery';
+@import './components/contact-us';
+@import './components/footer';
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+

@@ -1,0 +1,136 @@
+.contact-us {
+    background-color: #191c26;
+    & > .container {
+        display: flex;
+    }
+}
+
+.contact-us__left {
+    width: 53%;
+    padding-right: 40px;
+    & > .c-title {
+        color: $white;
+        margin-bottom: 44px;
+    }
+}
+
+.contact-us__form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-us__btn {
+    min-width: 160px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 45px;
+    &:nth-child(1),
+    &:nth-child(2) {
+        width: calc((100% - 30px) / 2);
+    }
+    &:nth-child(2) {
+        margin-left: 30px;
+    }
+    &:nth-child(3) {
+        width: 100%;
+    }
+
+    & .input-group__label {
+        position: absolute;
+        left: 0;
+        top: 1px;
+    
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+    
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    
+        color: rgba(157, 164, 189, 0.4);
+        transition: color 0.3s, transform 0.3s;
+    }
+}
+
+.input-group__input {
+    height: 24px;
+    width: 100%;
+
+    padding-bottom: 8px;
+
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    outline: none;
+
+    transition: border 0.3s;
+    color: $white;
+    background-color: transparent;
+    &:focus {
+        border-bottom: 1px solid $white;
+    }
+    &:focus + .input-group__label,
+    &:not(:placeholder-shown) + .input-label {
+        transform: translate(0, -20px);
+        color: $white;
+    }
+}
+
+.input-group__input--textarea {
+    resize: none;
+    height: 75px;
+}
+
+.contact-us__left,
+.contact-us__right {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.contact-us__right {
+    width: 47%;
+    background-image: url("../images/bg-contacts.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-left: 100px;
+    & .c-title {
+        color: $white;
+    }
+}
+
+.address {
+    display: block;
+    margin-top: 40px;
+    font-style: normal;
+}
+
+.address__link {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+    color: $lighter-text-color;
+    & svg {
+        margin-right: 20px;
+        margin-top: 4px;
+    }
+}
+
+.timetable {
+    margin-top: 70px;
+    & .c-uptitle::before {
+        background: rgba(157, 164, 189, 0.4);
+    }
+}
+.timetable__title {
+    color: $white;
+}
+.timetable__hours {
+    color: $lighter-text-color;
+    font-size: 18px;
+}

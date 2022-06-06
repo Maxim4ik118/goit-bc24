@@ -1,0 +1,35 @@
+.footer {
+    background-color: $biege-bg-color;
+    padding: 56px 0;
+    & > .container {
+        @include centeredFlex(space-between, center);
+    }
+}
+
+.footer__copyright {
+    margin: 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.2em;
+    color: $lighter-text-color;
+}
+
+.footer__links {
+    display: flex;
+    position: relative;
+    align-items: center;
+    &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+    
+        background-color: $title-color;
+    }
+}
+
+.footer__link {
+    @extend %transitionGrayLink;
+    margin-left: 40px;
+}

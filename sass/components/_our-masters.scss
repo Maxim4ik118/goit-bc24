@@ -1,0 +1,18 @@
+.our-masters {
+    @extend %c-section;
+    background-color: $biege-bg-color;
+}
+
+.our-masters__title {
+    color: $title-color;
+
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.masters {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}

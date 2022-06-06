@@ -1,0 +1,35 @@
+.best-barber {
+  @extend %c-section;
+  & > .container {
+    display: flex;
+  }
+}
+.best-barber__left {
+  flex: 1 1 500px;
+  display: flex;
+}
+
+.best-barber__img {
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+  & > img {
+    width: 100%;
+  }
+}
+
+.best-barber__right {
+  flex: 1 1 500px;
+  margin-left: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 500px;
+  & > .c-text-14 {
+    margin-bottom: 40px;
+  }
+}
+.best-barber__btn {
+  @extend %c-btn;
+  color: $title-color;
+}
