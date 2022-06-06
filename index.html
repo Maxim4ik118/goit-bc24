@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Разметка форм</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form class="form js-speaker-form">
+      <label class="input-group">
+        <input
+          autocomplete="off"
+          class="input"
+          type="text"
+          name="name"
+          placeholder=" "
+        />
+        <span class="input-text">Имя</span>
+        <svg width="30" height="30" class="icon">
+          <use href="./images/symbol-defs.svg#icon-user"></use>
+        </svg>
+      </label>
+
+      <label class="input-group">
+        <input
+          class="input"
+          type="tel"
+          name="tel"
+          id="tel-number"
+          placeholder=" "
+          autocomplete="off"
+        />
+        <span class="input-text">Телефон</span>
+
+        <svg width="30" height="30" class="icon">
+          <use href="./images/symbol-defs.svg#icon-phone"></use>
+        </svg>
+      </label>
+
+      <label class="input-group">
+        <input
+          class="input"
+          type="email"
+          name="mail"
+          placeholder=" "
+          autocomplete="off"
+        />
+        <span class="input-text">Почта</span>
+        <svg width="30" height="30" class="icon">
+          <use href="./images/symbol-defs.svg#icon-mail"></use>
+        </svg>
+      </label>
+
+      <div role="group" class="group">
+        <h2 class="group-title">Тема доклада</h2>
+
+        <ul class="topic-options">
+          <li>
+            <label class="checkbox-group">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="topic"
+                value="html"
+              />
+
+              <span class="checkbox-text">HTML</span>
+
+              <svg class="checkbox-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-tick"></use>
+              </svg>
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-group">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="topic"
+                value="css"
+              />
+              <span class="checkbox-text">CSS</span>
+
+              <svg class="checkbox-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-tick"></use>
+              </svg>
+            </label>
+          </li>
+          <li>
+            <label class="checkbox-group">
+              <input class="checkbox" type="checkbox" name="topic" value="js" />
+              <span class="checkbox-text">JavaScript</span>
+
+              <svg class="checkbox-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-tick"></use>
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div role="radiogroup" class="group">
+        <h2 class="group-title">Уровень вашей экспертизы</h2>
+
+        <ul class="experince-options">
+          <li>
+            <label>
+              <input type="radio" name="experience" value="junior" />
+              <span>Junior</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="experience" value="middle" />
+              <span>Middle</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="experience" value="senior" />
+              <span>Senior</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="input-group">
+        <label for="date">Дата доклада</label>
+        <input type="datetime-local" name="date" id="date" class="date" />
+      </div>
+
+      <div class="input-group">
+        <label for="pdf">Загрузите копию доклада в pdf</label>
+        <input type="file" name="pdf" id="pdf" />
+      </div>
+
+      <label class="input-group textarea-group">
+        <textarea
+          class="comment"
+          name="comment"
+          placeholder="Залиште комментарій... "
+        ></textarea>
+        <span class="input-text">Оставьте коментарий</span>
+      </label>
+
+      <label class="input-group">
+        <input type="checkbox" name="policy" />
+        <span>Соглашаюсь на всё, за еду</span>
+      </label>
+
+      <button type="submit" class="form-btn" disabled>Оставить заявку</button>
+    </form>
+
+    <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            // e.currentTarget.reset();
+          });
+
+        document.querySelector('.comment').addEventListener('input', e => {
+          console.log(e.target.value);
+          if(e.target.value !== "") {
+            document.querySelector('.form-btn').removeAttribute('disabled');
+          } else {
+            document.querySelector('.form-btn').setAttribute('disabled', true);
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
