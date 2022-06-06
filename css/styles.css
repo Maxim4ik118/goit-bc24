@@ -1,0 +1,51 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --title-color: #303030;
+    --lighter-text-color: rgba(157, 164, 189, 0.6);
+    --darker-text-color: #555555;
+    --accent-color: #FF6C00;
+    --white: #ffffff;
+}
+
+/* Common styles */
+.c-section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.c-title {
+    font-family: "Raleway", sans-serif;
+    color: var(--title-color);
+}
+
+.c-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.09em;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    color: var(--white);
+    padding: 12px 23px;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+}
+.c-btn:hover {
+    background-color: var(--accent-color);
+}
+/* Common styles */
+
+/* Hero section */
+.hero {
+    background-color: var(--title-color);
+}
+
+/* Hero section */
+
+.mybutton {
+    font-size: 30px;
+}
