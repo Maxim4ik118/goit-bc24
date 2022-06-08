@@ -1,13 +1,93 @@
-body {
-    font-family: "Open Sans", sans-serif;
-}
-
 :root {
     --title-color: #303030;
     --lighter-text-color: rgba(157, 164, 189, 0.6);
     --darker-text-color: #555555;
-    --accent-color: #FF6C00;
+    --accent-color: #ff6c00;
     --white: #ffffff;
+    --normal-font-size: 18px;
+    --font-open-sans: "Open Sans", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+    font-family: var(--font-open-sans);
+    font-size: var(--normal-font-size);
+}
+
+a {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+    background-image: url('../images/bg-contacts.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.post > .post-title {
+    font-family: var(--font-raleway);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.test-link {
+    text-transform: uppercase;
+    border: 5px solid saddlebrown;
+    background-color: rgba(75, 75, 75, 0.2);
+    padding: 15px;
+}
+
+.test-link.active, 
+.test-link:hover,
+.test-link:focus {
+    color: red;
+    background-color: aqua;
+    border: 5px solid yellow;
+}
+
+
+.post-title {
+    text-align: center;
+}
+
+.align-right {
+}
+
+.test-link:hover,
+.test-link:focus {
+    color: #ff6c00;
+    outline: none;
+}
+
+.align-justify {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.menu .submenu-item {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.menu-item {
+    color: var(--lighter-text-color);
+    font-size: 30px;
+}
+
+.submenu-item > .class {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+
+.hero {
+    margin-top: 500px;
 }
 
 /* Common styles */
@@ -45,7 +125,3 @@ body {
 }
 
 /* Hero section */
-
-.mybutton {
-    font-size: 30px;
-}
