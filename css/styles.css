@@ -599,20 +599,78 @@ body {
 }
 
 .contact-us {
-  background-color: #191C26;
+    background-color: #191c26;
 }
 
 .contact-us > .container {
     display: flex;
-
 }
 
 .address {
-   
 }
 
 .address-link {
     display: flex;
     align-items: flex-start;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* #f2ca29 */
+/* #03299d */
+/* .link-icon {
+    color: #03299d;
+    background-color: #f2ca29;
+
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    outline: none;
+} */
+
+.svg-icon {
+    fill: currentColor;
+}
+
+.link-icon:hover,
+.link-icon:focus {
+    color: #f7f7f7;
+    border: 1px solid rgb(255, 0, 64);
+}
+
+
+.social .link {
+    color: #03299d;
+    background-color: #f2ca29;
+    display: inline-flex;
+    /* padding: 12px; */
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    outline: none;
+    fill: #AFB1B8;
+}
+
+/* .svg-icon {
+    fill: currentColor;
+} */
+
+.social .link:hover .svg-icon,
+.social .link:focus .svg-icon {   
+    fill: red;
+}
+
+.social .link:hover,
+.social .link:focus {   
+    background-color: #2196F3;
 }
 
