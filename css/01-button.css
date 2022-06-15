@@ -1,7 +1,7 @@
 
 
  /* Animate background */
-
+ /* cubic-bezier(0.4, 0, 0.2, 1) */
 .btn {
   display: inline-flex;
   border: none;
@@ -12,10 +12,12 @@
   color: #fff;
   font: inherit;
   cursor: pointer;
+  transform: scale(1);
 
-  transition: 
-    background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), 
-    color 1000ms;
+
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 1000ms cubic-bezier(0.4, 0, 0.2, 1), 
+    transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -24,4 +26,5 @@
 .bth:focus {
   background-color: #d87093;
   color: #0000ff;
+  transform: scale(1.1);
 }
