@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
@@ -25,5 +29,213 @@
       </li>
       <li><a href="./04-custom.html">Кастомные чекбоксы</a></li>
     </ul>
+
+    <div>
+      <p class="animate__animated animate__bounce">
+        Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+
+    <form class="form" name="signup_form" autocomplete="off" novalidate>
+      <label class="input-group">
+        <span class="input-tag">Email</span>
+        <div class="input-wrapper">
+          <input class="input-field" type="email" name="email" />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="input-icon"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.8 5H19.2C20.19 5 21 5.7875 21 6.75V17.25C21 18.2125 20.19 19 19.2 19H4.8C3.81 19 3 18.2125 3 17.25V6.75C3 5.7875 3.81 5 4.8 5Z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20 7L12 13L4 7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </label>
+
+      <label class="input-group">
+        <span class="input-tag">First Name</span>
+        <div class="input-wrapper">
+          <input class="input-field" type="text" name="text" />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            class="input-icon"
+          >
+            <path
+              d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
+            />
+          </svg>
+        </div>
+      </label>
+
+      <label class="input-group">
+        <span class="input-tag">Phone number</span>
+        <div class="input-wrapper">
+          <input class="input-field" type="tel" name="phone_number" />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="input-icon"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.9996 16.0028V18.4163C20.0014 18.8693 19.8122 19.3021 19.4783 19.6084C19.1445 19.9147 18.697 20.066 18.2458 20.0252C15.7703 19.7562 13.3924 18.9103 11.3032 17.5555C9.35943 16.3203 7.71147 14.6724 6.47633 12.7286C5.11675 10.6299 4.27066 8.24046 4.0066 5.75383C3.96595 5.30403 4.11622 4.85785 4.42071 4.52429C4.7252 4.19073 5.15586 4.0005 5.6075 4.00008H8.02093C8.82851 3.99213 9.51685 4.5841 9.62988 5.38378C9.73174 6.15613 9.92065 6.91447 10.193 7.64435C10.414 8.23232 10.2727 8.89515 9.83099 9.34179L8.80931 10.3635C9.95453 12.3775 11.6221 14.0451 13.6362 15.1903L14.6578 14.1686C15.1045 13.727 15.7673 13.5856 16.3553 13.8066C17.0852 14.079 17.8435 14.2679 18.6159 14.3698C19.4248 14.4839 20.0198 15.1861 19.9996 16.0028Z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </label>
+
+      <div role="radiogroup">
+        <p class="input-tag">Choose a color:</p>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input
+              class="radio-field"
+              type="radio"
+              name="color"
+              value="red"
+              checked
+            />
+            <span class="fake"> </span>
+            <span>Red</span>
+          </label>
+          <label class="radio-label">
+            <input
+              class="radio-field"
+              type="radio"
+              name="color"
+              value="white"
+            />
+            <span class="fake"> </span>
+            <span>White</span>
+          </label>
+          <label class="radio-label">
+            <input
+              class="radio-field"
+              type="radio"
+              name="color"
+              value="green"
+            />
+            <span class="fake"></span>
+
+            <span>Green</span>
+          </label>
+        </div>
+      </div>
+
+      <div role="group">
+        <p class="input-tag">What are your hobbies?</p>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input
+              class="checkbox-field"
+              type="checkbox"
+              name="hobby"
+              value="music"
+              checked
+            />
+
+            <span class="fake">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="black"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.95703 7.75166L2.88825 7.68604L2.81923 7.75141L1.93123 8.59258L1.85486 8.66492L1.93097 8.73753L5.42671 12.0724L5.49574 12.1382L5.56476 12.0724L13.069 4.91352L13.1449 4.84116L13.069 4.76881L12.1873 3.92764L12.1183 3.86183L12.0493 3.92761L5.49577 10.1735L2.95703 7.75166Z"
+                  stroke="white"
+                  stroke-width="0.2"
+                />
+              </svg>
+            </span>
+
+            <span>Music</span>
+          </label>
+          <label class="checkbox-label">
+            <input
+              class="checkbox-field"
+              type="checkbox"
+              name="hobby"
+              value="sports"
+              checked
+            />
+            <span class="fake">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="black"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.95703 7.75166L2.88825 7.68604L2.81923 7.75141L1.93123 8.59258L1.85486 8.66492L1.93097 8.73753L5.42671 12.0724L5.49574 12.1382L5.56476 12.0724L13.069 4.91352L13.1449 4.84116L13.069 4.76881L12.1873 3.92764L12.1183 3.86183L12.0493 3.92761L5.49577 10.1735L2.95703 7.75166Z"
+                  stroke="white"
+                  stroke-width="0.2"
+                />
+              </svg>
+            </span>
+
+            <span>Sports</span>
+          </label>
+          <label class="checkbox-label">
+            <input
+              class="checkbox-field"
+              type="checkbox"
+              name="hobby"
+              value="reading"
+            />
+            <span class="fake">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="black"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.95703 7.75166L2.88825 7.68604L2.81923 7.75141L1.93123 8.59258L1.85486 8.66492L1.93097 8.73753L5.42671 12.0724L5.49574 12.1382L5.56476 12.0724L13.069 4.91352L13.1449 4.84116L13.069 4.76881L12.1873 3.92764L12.1183 3.86183L12.0493 3.92761L5.49577 10.1735L2.95703 7.75166Z"
+                  stroke="white"
+                  stroke-width="0.2"
+                />
+              </svg>
+            </span>
+
+            <span>Reading</span>
+          </label>
+        </div>
+      </div>
+
+      <label class="input-group">
+        <span class="input-tag">Коментар</span>
+        <textarea
+          class="input-field textarea-field"
+          name="comment"
+          placeholder="Введіть коментарій"
+        ></textarea>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>

@@ -6,8 +6,166 @@
 
 body {
   padding: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
   line-height: 1.5;
   color: #2a2a2a;
+}
+
+.form {
+  width: 100%;
+  max-width: 650px;
+  border: 1px solid sandybrown;
+  border-radius: 5px;
+  padding: 25px 15px;
+  margin: 0 auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group .input-field,
+.input-group .textarea-field {
+  padding: 9px 13px 9px 38px;
+
+  outline: none;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: #0f0057;
+  width: 100%;
+
+  transition: border 0.3s;
+}
+
+.input-group .textarea-field {
+  padding: 9px 13px;
+}
+
+.input-group .input-field:focus,
+.input-group .textarea-field:focus,
+.input-group:hover .input-field {
+  border: 3px solid rgb(100, 241, 34);
+}
+
+.input-group .textarea-field {
+  min-height: 130px;
+  resize: none;
+}
+
+.input-tag {
+  font-size: 18px;
+  color: #0f0057;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  transform: translateY(-50%);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.input-icon {
+  stroke: #9da4bd;
+  fill: transparent;
+  transition: stroke 0.3s, fill;
+}
+
+.input-group:hover .input-icon {
+  stroke: red;
+}
+.input-field:focus + .input-icon {
+  stroke: red;
+}
+/* stroke="#9DA4BD"
+stroke="#9DA4BD" */
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* .radio-field:checked,
+.checkbox-field:checked {
+} */
+
+.checkbox-field,
+.radio-field {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox-label {
+  position: relative;
+}
+
+.fake {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.fake > svg {
+  opacity: 0;
+
+  transition: opacity 0.3s;
+}
+
+.checkbox-field:checked + .fake,
+.radio-field:checked + .fake {
+  background-color: rgb(255, 94, 0);
+  border: 1px solid rgb(255, 94, 0);
+}
+
+.checkbox-field:checked + .fake > svg {
+  opacity: 1;
+}
+
+.checkbox-field:focus + .fake,
+.radio-field:focus + .fake,
+.radio-field:hover + .fake,
+.checkbox-field:hover + .fake {
+  background-color: rgb(199, 199, 199);
+  outline: 1px solid rgba(0, 89, 161, 0.808);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.radio-field + .fake {
+  border-radius: 50%;
+}
+
+.radio-field + .fake::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color .3s;
 }
