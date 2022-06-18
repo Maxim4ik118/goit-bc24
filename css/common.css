@@ -167,5 +167,12 @@ stroke="#9DA4BD" */
   height: 8px;
   background-color: #fff;
   border-radius: 50%;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
+}
+
+
+.par {
+  width: 423px;
+  margin: 0 auto;
+  display: flex;
 }
