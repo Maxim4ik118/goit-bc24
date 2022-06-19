@@ -1,0 +1,12 @@
+.page-header {
+  position: relative;
+
+  border-bottom: 2px solid black;
+}
+
+.page-header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
