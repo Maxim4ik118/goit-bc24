@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Препроцессор SASS</title>
+
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/home-page.min.css" />
   </head>
   <body>
     <header class="header">
@@ -23,10 +23,14 @@
     </header>
     <main class="main">
       <section class="gallery">
+        <h2 class="gallery__title">Gallery info</h2>
         <div class="container">
           <ul class="our-works">
             <li class="our-works__item">
               <div class="product">
+                <p class="product__title">Work1 <span class="product__name">i am span</span></p>
+                <p class="product__title">Work1</p>
+                <p class="product__title">Work1</p>
                 <p class="product__title">Work1</p>
                 <p class="product__meta">Meta</p>
               </div>
@@ -52,10 +56,12 @@
           </ul>
         </div>
       </section>
+
       <section class="our-developers">
         <div class="developer-card">
-          <img src="" alt="" class="developer-card__image">
-         <h3 class="developer-card__title"></h3>
+          <img src="" alt="" class="developer-card__image" />
+
+          <h3 class="developer-card__title"></h3>
         </div>
       </section>
     </main>
@@ -68,12 +74,30 @@
     <h1>Алгоритм підключення і використання препроцессорів</h1>
     <ul>
       <li>1. Перйменувати класи згідно БЕМ нотації</li>
-      <li>2. Створити файлову структуру</li>
+      <li>2. Створити файлову структуру (sass->[base + components + utils + main.scss + portfolio.scss])</li>
       <li>3. Додади розширення Live Sass Compiler</li>
-      <li>4. Додати папку .vscode та в неї помістити файл settings.json</li>
+      <li>
+        4. Додати папку <strong>.vscode</strong> та в неї помістити файл
+        <strong>settings.json</strong>
+      </li>
       <li>5. Переносите шрифти, нормалізатор та змінні в відповідні папки</li>
       <li>6. Виділяєте окремі блоки та переносите їх до компонентів</li>
-      <li>7. Окремі сторінки винести до окремих файлів</li>
+      <li>7. Окремі сторінки винести до окремих файлів (СУПЕР ОПЦІОНАЛЬНО)</li>
     </ul>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
+          debitis quibusdam doloremque perspiciatis distinctio consequuntur
+          nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
+          quos, veritatis accusantium similique tempora nemo? Quo consequuntur
+          iusto eius aut facilis doloribus aliquam quae vitae dolor
+          voluptatibus? Accusamus corrupti cumque odio illo.
+        </p>
+        <button data-close-modal>X</button>
+      </div>
+    </div>
+
   </body>
 </html>

@@ -1,17 +1,21 @@
+// утилітарні файли(першими мають бути змінні)
 @import "./utils/variables";
-// @import "./utils/placeholders";
-// @import "./utils/mixins";
-@import "./base/normalize";
+@import "./utils/mixins";
+
+// файли з базовими налаштуваннями
+@import "./base/reset";
 @import "./base/fonts";
+@import "./base/normalize";
+
 // кастомні компоненти
+@import "./components/modal";
 @import "./components/header";
-@import "./components/logo";
-@import "./components/product";
-// сторінки
+@import "./components/gallery";
+
 
 body {
-    color: $dark-blue;
-    font-family: $font-proxima;
+    // color: $dark-blue;
+    // font-family: $font-proxima;
 }
 
   p,
@@ -100,3 +104,7 @@ body {
 
 // @include generateIcons($socialIcons);
 // @include generateIcons($techIcons);
+
+
+
+

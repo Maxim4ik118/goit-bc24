@@ -1,0 +1,39 @@
+.gallery {
+    background-color: aqua;
+
+    &__title {
+        font-size: 48px;
+        color: red;
+    }
+
+    .our-works {
+        background-color: red;
+    }
+
+    .our-works__item {
+        background-color: blue;
+    }
+}
+
+.product {
+    background-color: green;
+
+    &__title {
+        background-color: yellow;
+        color: black;
+        transition: color 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: gray;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__meta {
+        background-color: tomato;
+    }
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;700;900&family=Raleway:wght@700&display=swap");
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -6,7 +7,6 @@ Document
 /**
 Use a better box model (opinionated).
 */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;700;900&family=Raleway:wght@700&display=swap");
 *,
 ::before,
 ::after {
@@ -86,7 +86,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -259,24 +259,61 @@ summary {
   display: list-item;
 }
 
-.header {
-  height: 80px;
-  background-color: yellow;
+.gallery {
+  background-color: aqua;
 }
 
-.logo {
-  width: 30px;
-  height: 30px;
+.gallery__title {
+  font-size: 48px;
+  color: red;
 }
 
-.product {
-  width: 200px;
+.gallery .our-works {
+  background-color: red;
+}
+
+.gallery .our-works__item {
   background-color: blue;
 }
 
-.list {
-  margin: 0;
+.product {
+  background-color: green;
+}
+
+.product__title {
+  background-color: yellow;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.product__title:hover, .product__title:focus {
+  color: gray;
+}
+
+.product__title:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.product__meta {
+  background-color: tomato;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
   padding: 0;
+  margin: 0;
+}
+
+ul {
   list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=main.css.map */
