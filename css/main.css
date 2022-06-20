@@ -99,9 +99,18 @@
   letter-spacing: 0.05em;
 }
 
+.c-text-18 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .c-text-14 {
   font-size: 14px;
   line-height: 1.8;
+}
+
+.c-text-14,
+.c-text-18 {
   color: #555555;
 }
 
@@ -109,12 +118,6 @@
 .c-text-18,
 .c-title {
   margin-top: 0;
-}
-
-.c-text-18 {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #555555;
 }
 
 .c-btn {
@@ -1092,16 +1095,6 @@ p {
 
 .footer__link {
   margin-left: 40px;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 body {

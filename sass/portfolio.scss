@@ -9,16 +9,10 @@
 @import './base/reset';
 
 /* Components */
-@import './components/hero';
 @import './components/header';
-@import './components/best-barber';
-@import './components/service';
-@import './components/master';
-@import './components/our-chioce';
-@import './components/our-masters';
-@import './components/gallery';
-@import './components/contact-us';
 @import './components/footer';
+@import './components/filters';
+@import './components/portfolio-works';
 
 
 body {
@@ -28,3 +22,6 @@ body {
 }
 
 
+.filters {
+    
+}

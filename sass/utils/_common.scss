@@ -79,9 +79,11 @@
   background-color: transparent;
   cursor: pointer;
   transition: all $transition-duration;
+
   &--dark {
     color: $title-color;
   }
+  
   &:hover,
   &:focus {
     background-color: $accent-color;
