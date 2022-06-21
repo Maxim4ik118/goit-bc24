@@ -3,6 +3,7 @@
     padding: 56px 0;
     & > .container {
         @include centeredFlex(space-between, center);
+        flex-wrap: wrap-reverse;
     }
 }
 
@@ -11,7 +12,8 @@
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
-
+    width: 126px;
+    white-space: nowrap;
     letter-spacing: 0.2em;
     color: $lighter-text-color;
 }
@@ -20,6 +22,7 @@
     display: flex;
     position: relative;
     align-items: center;
+    margin-left: auto;
     &::before {
         content: "";
         width: 60px;

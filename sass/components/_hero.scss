@@ -7,7 +7,6 @@
   margin: 0 auto;
 }
 .hero__aside {
-  // display: flex;
   flex-direction: column;
   height: 100vh;
 
@@ -18,6 +17,9 @@
   padding-bottom: 35px;
 
   display: none;
+  @include breakpoint(tablet) {
+    display: flex;
+  }
 }
 .aside-links {
   display: flex;
@@ -80,13 +82,26 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 40px;
-  // padding-right: 55px;
   padding-left: 30px;
   padding-right: 30px;
   z-index: 1;
+  position: relative;
+  @include breakpoint(tablet) {
+    height: 100%;
+    align-items: center;
+  }
+  @include breakpoint(laptop) {
+    padding-right: 50px;
+    padding-left: 100px;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
 }
 .hero__wrapper {
   margin-bottom: 140px;
+  @include breakpoint(laptop) {
+    margin-bottom: 25%;
+  }
 }
 .hero__uptitle {
   color: $gray-text-color-60;
@@ -96,18 +111,22 @@
 }
 
 .hero__title {
-  // font-size: 72px;
   font-size: 48px;
   letter-spacing: 0.05em;
   color: $white;
 
   margin-bottom: 20px;
   margin-top: 0;
+  @include breakpoint(laptop) {
+    font-size: 72px;
+  }
 }
 .hero__description {
   color: $lighter-text-color;
-  // max-width: 486px;
   max-width: 300px;
+  @include breakpoint(tablet) {
+    max-width: 486px;
+  }
 }
 
 .hero__bullets {
@@ -120,6 +139,13 @@
   right: 55px;
   z-index: 1;
   transform: translateY(-50%);
+  @include breakpoint(tablet) {
+    display: block;
+    right: 30px;
+  }
+  @include breakpoint(laptop) {
+    right: 55px;
+  }
 }
 
 .hero__bullet,
@@ -149,8 +175,18 @@
 
 .hero__controls {
   display: none;
-  // display: flex;
   justify-content: flex-end;
+  @include breakpoint(tablet) {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+  }
+  @include breakpoint(laptop) {
+    display: flex;
+    position: static;
+    margin-left: auto;
+  }
 }
 .hero__control {
   font-weight: 600;
@@ -187,6 +223,9 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 20px;
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 .menu-open {
   @include centeredFlex(center, center, inline-flex);

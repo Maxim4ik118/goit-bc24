@@ -18,7 +18,8 @@
   background-color: $white;
 
   transform: translateX(100%);
-  transition: transform .3s;
+  transition: transform 0.3s;
+
   &.is-open {
     transform: translateX(0);
   }
@@ -39,6 +40,9 @@
     &:hover svg,
     &:focus svg {
       fill: rgb(48, 83, 222);
+    }
+    @include breakpoint(tablet) {
+      display: none;
     }
   }
   .aside-links {
@@ -68,6 +72,20 @@
     bottom: 67px;
     background: $title-color;
   }
+  @include breakpoint(tablet) {
+    padding: 34px 40px;
+    display: flex;
+    position: static;
+    z-index: 1;
+    transform: translateX(0);
+    height: auto;
+    max-width: 100%;
+    background-color: transparent;
+    flex-direction: row;
+    .aside-links {
+      display: none;
+    }
+  }
 }
 
 .header__nav {
@@ -82,13 +100,36 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 64px;
+  @include breakpoint(tablet) {
+    flex-direction: row;
+    &.header__call {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    margin-bottom: 0;
+  }
+  @include breakpoint(laptop) {
+    flex-direction: row;
+    &.header__call {
+      flex-direction: row;
+    }
+  }
 }
 
 .nav-list__item + .nav-list__item {
-  // margin-left: 40px;
+  @include breakpoint(tablet) {
+    margin-left: 24px;
+  }
+  @include breakpoint(laptop) {
+    margin-left: 40px;
+  }
 }
+
 .nav-list__item--cta {
   margin-top: 12px;
+  @include breakpoint(tablet) {
+    margin-top: 0;
+  }
 }
 .header__link {
   color: $title-color;
@@ -102,5 +143,9 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+  @include breakpoint(tablet) {
+    color: $white;
+    font-size: 12px;
   }
 }
