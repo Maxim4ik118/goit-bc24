@@ -1,3 +1,22 @@
+@mixin breakpoint($point) {
+  @if $point==mobile {
+    @media only screen and (min-width: 479.98px) {
+      @content;
+    }
+  }
+  @if $point==tablet {
+    @media only screen and (min-width: 767.98px) {
+      @content;
+    }
+  }
+  @if $point==laptop {
+    @media only screen and (min-width: 1199.98px) {
+      @content;
+    }
+  }
+}
+
+
 @mixin centeredFlex($justifyContent: center, $alignItems: center, $display: flex, $flexDirection: row) {
     display: $display;
     justify-content: $justifyContent;
@@ -6,8 +25,16 @@
 }
 
 %c-section {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @include breakpoint(tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include breakpoint(laptop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 %visually-hidden {

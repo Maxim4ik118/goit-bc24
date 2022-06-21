@@ -14,6 +14,7 @@
     <link rel="manifest" href="./site.webmanifest">
     <!-- Ваші стилі -->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="./js/common.js" defer></script>
   </head>
 
   <body>
@@ -36,7 +37,19 @@
       </div>
       <div class="hero__main">
         <img src="./images/slider-1.jpg" alt="Barber while working" class="hero__img">
-        <header class="header">
+        <div class="mobile-banner">
+          <a class="mobile-logo" href="/">
+            <img src="./images/MobileLogo.svg" alt="logo" />
+          </a>
+  
+          <button type="button" class="menu-open" data-open-menu-button>
+            <svg  width="24" height="16">
+              <use href="./images/symbol-defs.svg#icon-menu" />
+            </svg>
+          </button>
+        </div>
+        
+        <header class="header" data-menu>
           <nav class="header__nav">
             <ul class="nav-list">
               <li class="nav-list__item">
@@ -57,16 +70,24 @@
             <li class="nav-list__item">
               <a href="tel:+380441111111" class="header__link">+38 044 111 11 11</a>
             </li>
-            <li class="nav-list__item">
-              <a href="" class="hero__btn"> онлайн-запись </a>
+            <li class="nav-list__item nav-list__item--cta">
+              <a href="" class="hero__btn c-btn c-btn--dark"> онлайн-запись </a>
             </li>
           </ul>
-
-
-          <button class="button-success">
-            Success
+          <ul class="aside-links">
+            <li>
+              <a href="#" class="aside-links__item">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="aside-links__item">Youtube</a>
+            </li>
+            <li class="line-decorator"></li>
+          </ul>
+          <button type="button" class="menu-close" data-close-menu-button>
+            <svg width="24" height="16">
+              <use href="./images/symbol-defs.svg#icon-menu-close" />
+            </svg>
           </button>
-          
         </header>
         <div class="hero__inner">
           <div class="hero__wrapper">

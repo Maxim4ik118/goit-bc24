@@ -1,9 +1,10 @@
 /* Common styles - Загальні стилі */
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1185px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 
   margin: 0 auto;
 }
@@ -41,9 +42,13 @@
   margin-bottom: 20px;
   letter-spacing: 0.05em;
 }
+
 .c-text-18 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
+  @include breakpoint(laptop) {
+    font-size: 18px;
+  }
 }
 .c-text-14 {
   font-size: 14px;
@@ -59,7 +64,6 @@
 .c-title {
   margin-top: 0;
 }
-
 
 .c-btn {
   display: inline-flex;
@@ -79,11 +83,10 @@
   background-color: transparent;
   cursor: pointer;
   transition: all $transition-duration;
-
   &--dark {
     color: $title-color;
   }
-  
+
   &:hover,
   &:focus {
     background-color: $accent-color;

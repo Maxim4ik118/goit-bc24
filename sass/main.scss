@@ -1,3 +1,7 @@
+
+/* Fonts - шрифти */
+@import './base/fonts';
+
 /* Utils */
 @import './utils/variables';
 @import './utils/mixins';
@@ -5,7 +9,6 @@
 
 /* Base */
 @import './base/normalize';
-@import './base/fonts';
 @import './base/reset';
 
 /* Components */
@@ -24,6 +27,7 @@
 body {
   font-family: $font-open-sans;
   letter-spacing: 0.02em;
+  font-size: $regular-font-size;
   margin: 0;
 }
 

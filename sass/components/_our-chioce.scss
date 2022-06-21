@@ -1,11 +1,14 @@
 .our-choice {
     @extend %c-section;
     background-color: $white;
-    padding-top: 120px;
     & > .container {
         display: flex;
         justify-content: center;
+        flex-direction: column-reverse;
     }
+    // @include breakpoint(laptop) {
+
+    // }
 }
 
 .our-choice__left,
@@ -14,14 +17,14 @@
 }
 .our-choice__left {
     list-style: none;
-    padding: 0 100px;
-    margin: 0;
+    // padding: 0 100px;
+    margin: 44px 0 0;
 
     max-width: 570px;
     flex-wrap: wrap;
 }
 .our-choice__item {
-    width: 170px;
+    width: calc((100% - 30px) / 2);
     padding: 20px;
 
     color: $title-color;
@@ -67,8 +70,11 @@
 
 .our-choice__right {
     flex-direction: column;
-    padding-left: 30px;
+    // padding-left: 30px;
     max-width: 530px;
+    .c-text-18 {
+        font-size: 18px;
+    }
 }
 .our-choice__title {
     margin-top: 0;
