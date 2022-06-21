@@ -16,6 +16,14 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    @include breakpoint(tablet) {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    @include breakpoint(laptop) {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
 }
 .work__img {
     display: block;
@@ -31,10 +39,27 @@
         object-position: center;
     }
     &:not(:last-child) {
-        // margin-right: 30px;
         margin-bottom: 30px;
     }
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    @include breakpoint(tablet) {
+        width: calc((100% - 30px) / 2);
+        margin-bottom: 30px;
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+    }
+    @include breakpoint(laptop) {
+        width: 100%;
+        margin-bottom: 0;
+        &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+        &:nth-child(2n) {
+            margin-left: 0;
+        }
     }
 }

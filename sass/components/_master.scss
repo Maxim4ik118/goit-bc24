@@ -1,63 +1,68 @@
-
 .master {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-        margin-bottom: 64px;
-        // margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  @include breakpoint(laptop) {
+    margin-left: 30px;
+    margin-bottom: 0;
     &:first-child {
-        // margin-left: 0;
-
+      margin-left: 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
   }
-  .master__img {
-    max-width: 418px;
-    object-fit: cover;
-    width: 100%;
-  }
-  .master__name {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.3;
-  
-    color: $title-color;
-    margin-top: 30px;
-    margin-bottom: 8px;
-  }
-  .master__position {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.35;
-  
-    color: $accent-color;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-  .master__socials {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .master__social {
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
+}
+.master__img {
+  max-width: 418px;
+  object-fit: cover;
+  width: 100%;
+}
+.master__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
 
-      &:hover .master__icon,
-      &:focus .master__icon {
-        fill: $accent-color;
-        transition: fill $transition-duration;
-      }
-      & > a {
-        border-radius: 50%;
-        background-color: $white;
-        width: 44px;
-        height: 44px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+  color: $title-color;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.master__position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+
+  color: $accent-color;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.master__socials {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.master__social {
+  &:not(:last-child) {
+    margin-right: 10px;
   }
-  
+
+  & > a {
+    border-radius: 50%;
+    background-color: $white;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover .master__icon,
+    &:focus .master__icon {
+      fill: $accent-color;
+      transition: fill $transition-duration;
+    }
+  }
+}

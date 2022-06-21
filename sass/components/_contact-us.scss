@@ -1,18 +1,36 @@
 .contact-us {
     background-color: #191c26;
+    background-image: url("../images/bg-contacts.png");
+    background-position: 50% 569px;
+    background-size: contain;
+    background-repeat: no-repeat;
     & > .container {
         display: flex;
         flex-direction: column;
+        @include breakpoint(laptop) {
+            flex-direction: row;
+        }
+    }
+    @include breakpoint(tablet) {
+        background-position: 50% 523px;
+    }
+    @include breakpoint(laptop) {
+        background-position: right;
     }
 }
 
 .contact-us__left {
-    // width: 53%;
-    // padding-right: 40px;
     & > .c-title {
         color: $white;
         margin-bottom: 44px;
         text-align: center;
+        @include breakpoint(tablet) {
+            text-align: left;
+        }
+    }
+    @include breakpoint(laptop) {
+        width: 53%;
+        padding-right: 40px;
     }
 }
 
@@ -24,19 +42,25 @@
 .contact-us__btn {
     min-width: 160px;
     margin: 0 auto;
+    @include breakpoint(tablet) {
+        margin: 0 0 auto;
+    }
 }
 
 .input-group {
     position: relative;
     margin-bottom: 45px;
     width: 100%;
-    // &:nth-child(1),
-    // &:nth-child(2) {
-    //     width: calc((100% - 30px) / 2);
-    // }
-    // &:nth-child(2) {
-    //     margin-left: 30px;
-    // }
+
+    @include breakpoint(tablet) {
+        &:nth-child(1),
+        &:nth-child(2) {
+            width: calc((100% - 30px) / 2);
+        }
+        &:nth-child(2) {
+            margin-left: 30px;
+        }
+    }
     &:nth-child(3) {
         width: 100%;
     }
@@ -45,14 +69,14 @@
         position: absolute;
         left: 0;
         top: 1px;
-    
+
         font-weight: 600;
         font-size: 11px;
         line-height: 1.36;
-    
+
         letter-spacing: 0.1em;
         text-transform: uppercase;
-    
+
         color: rgba(157, 164, 189, 0.4);
         transition: color 0.3s, transform 0.3s;
     }
@@ -91,16 +115,17 @@
     @extend %c-section;
 }
 .contact-us__right {
-    // width: 47%;
-    background-image: url("../images/bg-contacts.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    // padding-left: 100px;
-    
+    position: relative;
+    @include breakpoint(laptop) {
+        padding-left: 100px;
+        width: 47%;
+    }
     & .c-title {
         color: $white;
         text-align: center;
+        @include breakpoint(tablet) {
+            text-align: left;
+        }
     }
 }
 
@@ -108,6 +133,7 @@
     display: block;
     margin-top: 40px;
     font-style: normal;
+    max-width: 330px;
 }
 
 .address__link {
@@ -128,6 +154,13 @@
     margin-top: 40px;
     @include breakpoint(tablet) {
         margin-top: 0;
+        position: absolute;
+        left: calc(330px + 90px);
+        bottom: 219px;
+    }
+    @include breakpoint(laptop) {
+        margin-top: 70px;
+        position: static;
     }
     & .c-uptitle::before {
         background: rgba(157, 164, 189, 0.4);

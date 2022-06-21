@@ -5,10 +5,11 @@
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
+        @include breakpoint(laptop) {
+            justify-content: center;
+            flex-direction: row;
+        }
     }
-    // @include breakpoint(laptop) {
-
-    // }
 }
 
 .our-choice__left,
@@ -17,11 +18,14 @@
 }
 .our-choice__left {
     list-style: none;
-    // padding: 0 100px;
     margin: 44px 0 0 auto;
 
     max-width: 570px;
     flex-wrap: wrap;
+    @include breakpoint(laptop) {
+        padding: 0 100px;
+        margin-top: 0;
+    }
 }
 .our-choice__item {
     width: calc((100% - 30px) / 2);
@@ -30,6 +34,12 @@
     color: $title-color;
     background-color: $biege-bg-color;
     text-align: center;
+    @include breakpoint(tablet) {
+        max-width: 210px;
+    }
+    @include breakpoint(laptop) {
+        max-width: 170px;
+    }
     &:nth-child(2n) {
         margin-left: 30px;
         margin-top: 30px;
@@ -63,15 +73,14 @@
         font-size: 16px;
         line-height: 1.3;
         margin-left: 2px;
-    
+
         color: $accent-color;
     }
 }
 
 .our-choice__right {
     flex-direction: column;
-    // padding-left: 30px;
-    max-width: 530px;
+    max-width: 500px;
     .c-text-18 {
         font-size: 18px;
     }
