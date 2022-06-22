@@ -18,7 +18,7 @@
 
           <button
             type="button"
-            class="menu-button"
+            class="menu-button is-open"
             aria-expanded="false"
             aria-controls="menu-container"
             data-menu-button
@@ -34,17 +34,31 @@
           </button>
 
           <div class="menu-container" id="menu-container" data-menu>
-            <div class="navigation"></div>
-            <div class="contacts"></div>
+            <div class="navigation">
+              <svg width="30" height="30">
+                <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+              </svg>
+              navigation
+            </div>
+            <div class="contacts">
+              <svg width="30" height="30">
+                <use class="icon-menu" href="./img/sprite.svg#cross"></use>
+              </svg>
+              contacts</div>
+            <ul class="menu-list">
+              <li class="menu-list__item"><a href="">Twitter</a></li>
+              <li class="menu-list__item"><a href="">Facebook</a></li>
+              <li class="menu-list__item"><a href="">Instagram</a></li>
+            </ul>
           </div>
         </nav>
       </div>
     </div>
 
     <main>
-      <div class="container">
+      <!-- <div class="container">
         <button type="button" data-modal-open>Открыть</button>
-      </div>
+      </div> -->
 
       <section class="section features">
         <div class="container">

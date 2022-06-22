@@ -10,7 +10,7 @@
   }
 }
 
-.menu-button .icon-cross {
+.icon-cross {
   display: none;
 }
 
@@ -27,22 +27,22 @@
   padding: 20px;
   text-align: center;
   font-size: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
 
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    &.is-open {
-      display: block;
-    }
+  &.is-open {
+   display: block; 
   }
 
   @media screen and (min-width: 768px) {
+    position: static;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
   }
 }
@@ -51,12 +51,41 @@
 .contacts {
   height: 50px;
   width: 140px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    & svg {
+      display: none;
+    }
+  }
 }
 
 .navigation {
   outline: 1px solid teal;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts {
   outline: 1px solid orange;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  &__item {
+    padding: 8px;
+    font-size: 12px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
