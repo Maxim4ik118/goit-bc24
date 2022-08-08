@@ -4,65 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BC 31</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <header>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, ipsam.
+      </p>
+      <span>Click here:
+        <a href="#">>HERE!</a>
+      </span>
 
-    <section class="hero">
-      <header class="header">
-        <a href="/">
-          <img src="./images/logo.svg" alt="logo" />
-        </a>
+      <h1>Title 1</h1>
+      <h2>Title 2</h2>
+      <h3>Title 3</h3>
+      <h4>Title 4</h4>
 
-        <div class="header-links">
-          <a href="" class="header-link"> Youtube </a>
-          <a href="" class="header-link"> Instagram</a>
-          <div class="line-decorator"></div>
-        </div>
-      </header>
+      <!-- ПОГАНО -->
+      <ul>
+        <h1>Title 1</h1>
+        <h2>Title 2</h2>
+        <h3>Title 3</h3>
+        <h4>Title 4</h4>
+      </ul>
 
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <a href="">О нас</a>
-            </li>
-            <li>
-              <a href="">Услуги и цены</a>
-            </li>
-            <li>
-              <a href="">Мастера</a>
-            </li>
-            <li>
-              <a href="">Контакты</a>
-            </li>
-          </ul>
+      <!-- ДОБРЕ -->
+      <ul>
+        <li>
+          <p>Card1</p>
+        </li>
+        <li><p>Card2</p></li>
+        <li><p>Card3</p></li>
+        <li><p>Card4</p></li>
+      </ul>
 
-          <ul>
-            <li>
-              <a href="tel:+380441111111">+38 044 111 11 11</a>
-            </li>
-            <li>
-              <a href=""> онлайн-запись </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="hero-section-inner">
-          <div class="hero-section-wrapper">
-            <div class="hero-section-uptitle">
-              <div class="line-decorator"></div>
-              <span>A hair salon for men in Kyiv</span>
+      <button type="button">
+        Button <span>Lorem, ipsum.</span>
+      </button>
+
+      <img src="./images/beard-1.jpg" alt="beard-1.jpg" />
+    </header>
+
+    НЕ МОЖНО: 
+    - вкладати блочний елемент в строчний!; 
+
+    МОЖНО: 
+    - вкладати блочний
+    елемент в блочний; 
+    - строчний в строчний; 
+    - строчний в блочний;
+
+    <main>
+      <section class="hero">
+        <header class="header">
+          <a href="/">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+
+          <div class="header-links">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/search?q=noopener+noreferrer&rlz=1C1SQJL_ruUA992GB1010&oq=noope&aqs=chrome.1.69i57j0i67j0i512l2j0i67l2j0i512l4.2153j0j7&sourceid=chrome&ie=UTF-8"
+              class="header-link"
+              title="Link to our YouTube channel"
+            >
+              Youtube
+            </a>
+            <a href="" class="header-link"> Instagram</a>
+            <div class="line-decorator"></div>
+          </div>
+        </header>
+
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="">О нас</a>
+              </li>
+              <li>
+                <a href="">Услуги и цены</a>
+              </li>
+              <li>
+                <a href="">Мастера</a>
+              </li>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="tel:+380441111111">+38 044 111 11 11</a>
+              </li>
+              <li>
+                <a href=""> онлайн-запись </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hero-section-inner">
+            <div class="hero-section-wrapper">
+              <div class="hero-section-uptitle">
+                <div class="line-decorator"></div>
+                <span>A hair salon for men in Kyiv</span>
+              </div>
+
+              <h1 class="hero-section-title">BarberShop</h1>
+
+              <p class="hero-section-description">
+                We are experts in trendy men's haircuts. We work quickly,
+                carefully, and tastefully.
+              </p>
             </div>
-
-            <h1 class="hero-section-title">BarberShop</h1>
-
-            <p class="hero-section-description">
-              We are experts in trendy men's haircuts. We work quickly,
-              carefully, and tastefully.
-            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
+    <footer></footer>
   </body>
 </html>
