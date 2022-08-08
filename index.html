@@ -1,61 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="title" content="BC 31" />
+    <meta name="description" content="Київський барбешоп" />
+
     <title>BC 31</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, ipsam.
-      </p>
-      <span>Click here:
-        <a href="#">>HERE!</a>
-      </span>
+      <div class="container">
+        <nav>
+          <a href="#">
+            <img src="./images/logo.svg" alt="Logo" />
+          </a>
+          <ul>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Наша команда</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Галерея</a></li>
+          </ul>
+        </nav>
 
-      <h1>Title 1</h1>
-      <h2>Title 2</h2>
-      <h3>Title 3</h3>
-      <h4>Title 4</h4>
-
-      <!-- ПОГАНО -->
-      <ul>
-        <h1>Title 1</h1>
-        <h2>Title 2</h2>
-        <h3>Title 3</h3>
-        <h4>Title 4</h4>
-      </ul>
-
-      <!-- ДОБРЕ -->
-      <ul>
-        <li>
-          <p>Card1</p>
-        </li>
-        <li><p>Card2</p></li>
-        <li><p>Card3</p></li>
-        <li><p>Card4</p></li>
-      </ul>
-
-      <button type="button">
-        Button <span>Lorem, ipsum.</span>
-      </button>
-
-      <img src="./images/beard-1.jpg" alt="beard-1.jpg" />
+        <div>
+          <a href="tel:+380441111111">+38 044 111 11 11</a>
+          <a href="mailto:mailmail@gmail.com">mailmail@gmail.com</a>
+        </div>
+      </div>
     </header>
 
-    НЕ МОЖНО: 
-    - вкладати блочний елемент в строчний!; 
-
-    МОЖНО: 
-    - вкладати блочний
-    елемент в блочний; 
-    - строчний в строчний; 
-    - строчний в блочний;
-
     <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Our miraculous web page!</h1>
+          <button>Click to move forward</button>
+        </div>
+      </section>
+
+      <section class="our-team">
+        <div class="container">
+          <h2>Наша команда</h2>
+
+          <ul>
+            <li>
+              <img src="./images/master-1.jpg" alt="Ім'я та прізвище" />
+              <h3>Ім'я та прізвище</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates, laudantium?
+              </p>
+            </li>
+            <li>
+              <img src="./images/master-2.jpg" alt="Ім'я та прізвище" />
+              <h3>Ім'я та прізвище</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates, laudantium?
+              </p>
+            </li>
+            <li>
+              <img src="./images/master-3.jpg" alt="Ім'я та прізвище" />
+              <h3>Ім'я та прізвище</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates, laudantium?
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="container">
+          <h2>Наші переваги</h2>
+
+          <div class="benefits-row">
+            <ul>
+              <li>
+                <h3>Перевага 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci temporibus ut dicta sequi reprehenderit. Repellat
+                  animi officia error illum provident.
+                </p>
+              </li>
+              <li>
+                <h3>Перевага 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci temporibus ut dicta sequi reprehenderit. Repellat
+                  animi officia error illum provident.
+                </p>
+              </li>
+              <li>
+                <h3>Перевага 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci temporibus ut dicta sequi reprehenderit. Repellat
+                  animi officia error illum provident.
+                </p>
+              </li>
+              <li>
+                <h3>Перевага 4</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci temporibus ut dicta sequi reprehenderit. Repellat
+                  animi officia error illum provident.
+                </p>
+              </li>
+            </ul>
+            <div class="benefit-main-img">
+              <img src="./images/beard-2.jpg" alt="Приклад роботи над бородою" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <main>
       <section class="hero">
         <header class="header">
           <a href="/">
@@ -120,7 +187,7 @@
           </div>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <footer></footer>
   </body>
