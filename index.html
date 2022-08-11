@@ -21,22 +21,107 @@
       rel="stylesheet"
     />
     <!-- Ваші стилі -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <header class="header">
+      <a href="" class="nav-link">9</a>
 
-    <ul class="list">
-      <li class="list-item">1</li> 
-      <li class="list-item">2</li> 
-      <li class="list-item">3</li> 
-      <li class="list-item">4</li> 
-      <li class="list-item">5</li>
-      <li class="list-item">6</li>
-      <li class="list-item">7</li>
-      <li class="list-item">8</li>
-      <li class="list-item">9</li>
-      <li class="list-item">10</li>
-    </ul>
+      <div class="container">
+        <ul class="header-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">1</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">2</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">3</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">4</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">5</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">6</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">7</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">8</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">9</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+      </div>
+    </section>
+
+    <!-- 
+
+    Паддінг: 
+     - Регулює відступ від границі елемента, до його контенту(вмісту);
+
+    Марджин: 
+     - Регулює відступ між двома різними елементами елементами(li li, ul, a); 
+    
+    Cтрочні/Рядкові елменти:
+     - Не працюють вертикальні марджини(ВЗАГАЛІ);
+     - Вертикальні падінги та фон лише візуальні, отже не впливають на геометрію елемента;
+     - Не можливо задати фізичні розміри(width, height);
+     
+    Строчно-блочні елементи:
+     - Можна задавати будь-яку геометрію, та будь-які властивості;
+     - При цьому, поводять себе в потоці документа, як звичайні строчні елементи;
+
+    При звертанні до селектора елемента з 
+    структурним псевдокласом :firts-child/:last-child/:nth-child() і т.д.
+    обов'язково слідкуйте за тим, щоб в них був один загальний батьківський контейнер
+       <ul class="header-nav">
+            <li class="nav-item">
+              <a href="" class="nav-link">1</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">2</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">3</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">4</a>
+            </li>
+        </ul>
+
+        .nav-item:first-child .nav-link {
+              background-color: rgb(4, 0, 128);
+        }
+        .nav-item:last-child .nav-link {
+            background-color: teal;
+        }
+
+    Формула: 
+      2n - буде вибирати нам всі парні елементи;
+      2n + 1 - буде вибирати нам всі НЕпарні елементи;
+      -n + 3 - вибере перші 3 елементи, якщо :nth-child, 
+      а якщо :nth-last-child - то вибере останні 3 елементи;
+      3n + 3 або ж 3n - вибере кожен третій елемент;
+    -->
 
     <section class="hero">
       <button type="button" class="c-btn hero-btn">book a haircut</button>

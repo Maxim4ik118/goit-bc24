@@ -6,19 +6,90 @@
     --white: #ffffff;
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 body {
     font-family: "Open Sans", sans-serif;
 }
+
+p {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.header {
+    border-bottom: 1px solid black;
+    margin-bottom: 500px;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: o auto;
+}
+
+.hero {
+    background-color: #303030;
+    color: var(--white);
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero-title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.nav-link {
+    display: block;
+    margin: 15px;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: #ff6c00;
+}
+
+.nav-item {
+    display: block;
+}
+
+/* .nav-item:nth-child(1) .nav-link,
+.nav-item:nth-child(3) .nav-link,
+.nav-item:nth-child(5) .nav-link,
+.nav-item:nth-child(7) .nav-link {
+    background-color: rgb(4, 0, 128);
+} */
+
+/* n -> [0, 1, 2, 3, 4 - 7] */
+.nav-item:nth-child(3n) .nav-link {
+    background-color: rgb(4, 0, 128);
+}
+
 
 /* Common styles - Загальні стилі */
 
