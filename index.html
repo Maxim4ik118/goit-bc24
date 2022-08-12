@@ -20,6 +20,16 @@
 </head>
 
 <body>
+      <!-- 
+      Нотатка:
+       - якщо ношому SVG елементу потрібно буде змінювати колір при
+         ховері/фокусі, ми ОБОВ'ЯЗКОВО видаляємо всі fill(заливка) або stroke(рамка) та атрибут style,
+         а потім, задаємо його через CSS;
+       - ящко нашому SVG елементу НЕ потрібно динамічно змінювати колір, то ми залишаємо
+         його так як є.
+       - обов'язково задавати width та height SVG тегу;
+
+     -->
   <section class="hero">
     <div class="hero-aside">
       <a href="/">
@@ -228,7 +238,9 @@
         <div class="c-uptitle">
           <p>для настоящих ценителей атмосферы</p>
         </div>
-
+        <svg width="20" height="20"">
+          a
+        </svg>
         <h2 class="c-title our-masters-title">Наши мастера</h2>
         <ul lang="en" class="masters">
           <li class="master">
@@ -236,22 +248,24 @@
             <p class="master-name">John Smith</p>
             <p class="master-position">Extreme Barber</p>
             <ul class="master-socials">
-              <li class="master-social"><a href="" aria-label="Instagram">
+              <li class="master-social">
+                <a class="social-link" href="" aria-label="Instagram">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-instagram" />
                   </svg>
-                </a></li>
-              <li class="master-social"><a href="" aria-label="Twitter">
+                </a>
+              </li>
+              <li class="master-social"><a class="social-link" href="" aria-label="Twitter">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-twitter" />
                   </svg>
                 </a></li>
-              <li class="master-social"><a href="" aria-label="Facebook">
+              <li class="master-social"><a class="social-link" href="" aria-label="Facebook">
                   <svg class="social-icon" height="20" width="20">
-                    <use href="./images/symbol-defs.svg#icon-facebook" />
+                    <use href="./images/symbol-defs.svg#icon-facebook2" />
                   </svg>
                 </a></li>
-              <li class="master-social"><a href="" aria-label="LinkedIn">
+              <li class="master-social"><a class="social-link" href="" aria-label="LinkedIn">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-linkedin" />
                   </svg>
@@ -263,22 +277,24 @@
             <p class="master-name">Michele Doe</p>
             <p class="master-position">Extreme Barber</p>
             <ul class="master-socials">
-              <li class="master-social"><a href="" aria-label="Instagram">
+              <li class="master-social">
+                <a class="social-link" href="" aria-label="Instagram">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-instagram" />
                   </svg>
-                </a></li>
-              <li class="master-social"><a href="" aria-label="Twitter">
+                </a>
+              </li>
+              <li class="master-social"><a class="social-link" href="" aria-label="Twitter">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-twitter" />
                   </svg>
                 </a></li>
-              <li class="master-social"><a href="" aria-label="Facebook">
+              <li class="master-social"><a class="social-link" href="" aria-label="Facebook">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-facebook" />
                   </svg>
                 </a></li>
-              <li class="master-social"><a href="" aria-label="LinkedIn">
+              <li class="master-social"><a class="social-link" href="" aria-label="LinkedIn">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-linkedin" />
                   </svg>
@@ -290,22 +306,22 @@
             <p class="master-name">Alan Black</p>
             <p class="master-position">Extreme Barber</p>
             <ul class="master-socials">
-              <li class="master-social"><a href="" aria-label="Instagram">
+              <li class="master-social"><a class="social-link" href="" aria-label="Instagram">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-instagram" />
                   </svg>
                 </a></li>
-              <li class="master-social"><a href="" aria-label="Twitter">
+              <li class="master-social"><a class="social-link" href="" aria-label="Twitter">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-twitter" />
                   </svg>
                 </a></li>
-              <li class="master-social"><a href="" aria-label="Facebook">
+              <li class="master-social"><a class="social-link" href="" aria-label="Facebook">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-facebook" />
                   </svg>
                 </a></li>
-              <li class="master-social"><a href="" aria-label="LinkedIn">
+              <li class="master-social"><a class="social-link" href="" aria-label="LinkedIn">
                   <svg class="social-icon" height="20" width="20">
                     <use href="./images/symbol-defs.svg#icon-linkedin" />
                   </svg>

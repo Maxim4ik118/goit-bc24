@@ -548,20 +548,33 @@ body {
 .master-social:not(:last-child) {
     margin-right: 10px;
 }
-.master-social > a {
+.social-icon {
+    transition: fill var(--transition-duration);
+}
+
+
+.social-link {
     border-radius: 50%;
     background-color: var(--white);
+    border: 1px solid transparent;
     width: 44px;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
+
+    transition: border var(--transition-duration);
 }
 
-.master-social:hover .social-icon,
-.master-social:focus .social-icon {
+.social-link:hover,
+.social-link:focus {
+    border: 1px solid #03299d;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
     fill: var(--accent-color);
-    transition: fill var(--transition-duration);
 }
 
 .gallery-title {
@@ -645,7 +658,6 @@ body {
     border: 1px solid rgb(255, 0, 64);
 }
 
-
 .social .link {
     color: #03299d;
     background-color: #f2ca29;
@@ -657,7 +669,7 @@ body {
     align-items: center;
     border: 1px solid blue;
     outline: none;
-    fill: #AFB1B8;
+    fill: #afb1b8;
 }
 
 /* .svg-icon {
@@ -665,12 +677,11 @@ body {
 } */
 
 .social .link:hover .svg-icon,
-.social .link:focus .svg-icon {   
+.social .link:focus .svg-icon {
     fill: red;
 }
 
 .social .link:hover,
-.social .link:focus {   
-    background-color: #2196F3;
+.social .link:focus {
+    background-color: #2196f3;
 }
-
