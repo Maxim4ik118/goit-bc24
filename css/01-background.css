@@ -22,15 +22,16 @@
   background-color: #2196f3;
   background-image: url("../images/cat.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 100px 50px;
 }
 
 /* bird */
 .box:nth-child(2) {
   background-color: #9c27b0;
   background-image: url("../images/bird.png");
-  background-repeat: repeat-x;
-  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* dog */

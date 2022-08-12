@@ -35,7 +35,9 @@
   padding: 0;
   list-style: none;
 }
+.list::before {
 
+}
 .list-item {
   width: 350px;
   margin: 10px;
@@ -45,8 +47,8 @@
 }
 
 .list-item::before {
-  display: block;
   content: "";
+  display: block;
   height: 120px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -55,7 +57,7 @@
 }
 
 .icon-delivery::before {
-  background-image: url("../images/cat.png");
+  background-image: url("../images/rocket-icon.png");
 }
 
 .icon-mobile::before {
