@@ -14,6 +14,29 @@ p {
     margin: 0;
 }
 
+.example {
+    background-color: aquamarine;
+    height: 100vh;
+    padding: 1px;
+}
+
+.excerpt {
+    border: 1px dashed black;
+    color: black;
+    font-size: 22px;
+    margin: 50px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
