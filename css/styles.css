@@ -1,6 +1,10 @@
 
-
 img {
     display: block;
     max-width: 100%;
+}
+
+.blog-title {
+  color: blueviolet;
+  font-size: 43px;
 }
